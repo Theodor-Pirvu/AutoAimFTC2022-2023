@@ -35,8 +35,6 @@ public class OkHearMeOut extends OpenCvPipeline {
     private double maxArea = 11000;
     private boolean first = false;
     private final Object sync = new Object();
-    public double min_area = 1500.0; //these arent set values so try to find a decent range of min and max ↓↓↓
-    public double max_area = 1700.0;
     public double min_midpoint = 310;
     public double max_midpoint = 330;
     public boolean area_ranges = getRectArea() >= min_area && getRectArea() <= max_area;        //same thing with these two ranges
@@ -121,7 +119,7 @@ public class OkHearMeOut extends OpenCvPipeline {
                                 && rect.x + (rect.width / 2.0) > (borderLeftX * CAMERA_WIDTH) && rect.x + (rect.width / 2.0) < CAMERA_WIDTH - (borderRightX * CAMERA_WIDTH)
                                 && rect.y + (rect.height / 2.0) > (borderTopY * CAMERA_HEIGHT) && rect.y + (rect.height / 2.0) < CAMERA_HEIGHT - (borderBottomY * CAMERA_HEIGHT)
                         ) {
-                            maxArea = 500; //FIXME: This should be 5k or above
+                            maxArea = 500;
                             maxRect = rect;
                             pLoopCounter++;
                             loopCounter = pLoopCounter;
@@ -135,7 +133,7 @@ public class OkHearMeOut extends OpenCvPipeline {
                     contour.release();
                 }
                 if (contours.isEmpty()) {
-                    maxRect = new Rect(600, 1, 1, 1); //look here as well
+                    maxRect = new Rect(600, 1, 1, 1);
                 }
             }
             if (first && maxRect.area() > 4200) { //swivel length == 10.5 in. pole distance == 8in.
@@ -154,6 +152,7 @@ public class OkHearMeOut extends OpenCvPipeline {
                 tangent = (Math.toDegrees(Math.tan(x_distance_pixel / wristCorrF))) * 0.015;
             }
             //Swivel Correction(in testing)
+
 //            currentX = Math.abs(getRectMidpointX());
 //            if (currentX - previousX > 32){
 //                tangent = 0;
