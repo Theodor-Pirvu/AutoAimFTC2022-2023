@@ -12,3 +12,7 @@ Milestone images:
 
 
 ![autoaimmath2](https://user-images.githubusercontent.com/110932395/221076340-dce8ff40-db9d-427b-ad16-d0201fb9bad4.jpg)
+
+
+![auto_aim_math](https://user-images.githubusercontent.com/110932395/221076532-d5c98725-39c2-43fc-bcd0-a692e06c8709.jpg)
+
