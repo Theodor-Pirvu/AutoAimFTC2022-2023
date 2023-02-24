@@ -4,7 +4,7 @@ Using EasyOpenCV and the Java programming language, I have created a feauture th
 ## How It Works
 With the coordinate system set up, using EasyOpenCV's built in frame processing, and a little bit of math sprinkled on top, it was returning the pole x-midpoint, the pole area and other aspects that I wasn't using. By using inverse tangents, I was able to get the angle of the bot's direction with the pole's midpoint. With this inverse tangent angle, I was able to convert it to a servo angle with some more math. Now with the pole area, I set up a graph to find an average finding area equation, that takes in the pole's area, and turns it into inch parameters. I used this to automatically get our bot's swivel closer toward the pole. With these two parameters (the angle of the pole and the distance between the pole and the bot), with the click of a button or automatically, the precision that our bot was able to get was unmatched compared to other bots during the competition, which allowed us to win the State Championship and get qualified to the worlds competition in Housten, Texas. 
 
-Overall I really enjoyed this project because it brought me closer to my dream, and I am glad I was able to complete it with the time cruch I had on my hands. (Also shout out to our team's coach/mentor for helping me out.)
+Overall I really enjoyed this project because it brought me closer to my dream, and I am glad I was able to complete it with the time cruch I had on my hands. (Also shout out to David for helping me out.)
 
 Milestone images:
 
