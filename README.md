@@ -8,4 +8,4 @@ Overall I really enjoyed this project because it brought me closer to my dream, 
 
 Milestone images:
 
-![autoaim](https://user-images.githubusercontent.com/110932395/221076003-318230d9-8b47-4b62-a7cf-808208871176.jpg)
+![autoaim](https://user-images.githubusercontent.com/110932395/221076253-981221e3-ba5e-46de-8fb3-60c0c92acedc.jpg)
